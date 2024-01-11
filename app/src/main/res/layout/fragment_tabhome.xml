@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EA4B81">
+
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/tabbtnid1"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/_13sdp"
+        app:strokeColor="#3A3838"
+        app:strokeWidth="@dimen/_1sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardBackgroundColor="#DDEBD8D8"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:text="First Tab"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_29ssp"
+                android:textColor="#141414"
+                />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text1"
+                android:text="By SK"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tabbtnid2"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/_13sdp"
+        app:strokeColor="#3A3838"
+        app:strokeWidth="@dimen/_1sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tabbtnid1"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardBackgroundColor="#DDEBD8D8"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:text="Second Tab"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_29ssp"
+                android:textColor="#141414"
+                />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text2"
+                android:text="By Sonu "
+                android:textStyle="italic"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

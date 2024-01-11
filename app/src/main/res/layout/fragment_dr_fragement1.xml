@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D3376C"
+
+    tools:context=".drawerfragment.DrFragement1">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/customdialoganimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+        <TextView
+            android:id="@+id/viewtitleid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20ssp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:padding="@dimen/_10sdp"
+            android:textColor="#00BCD4"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:background="@drawable/textview_border"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/all_dilog_example" />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/left_rightbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="LEFT/RIGHT ANIMATION Dilog"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/montserrat"
+            app:backgroundTint="@null"
+            style="@style/AppTheme.RoundedCornerMaterialButtonYes"
+
+            app:layout_constraintTop_toBottomOf="@+id/viewtitleid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+          />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/up_downbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="UP/DOWN ANIMATION Dilog"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/montserrat"
+            app:backgroundTint="@null"
+            style="@style/AppTheme.RoundedCornerMaterialButtonYes"
+            app:layout_constraintTop_toBottomOf="@+id/left_rightbtn1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fadein_fadeoutbtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="FADE IN/FADE OUT ANIMATION Dilog"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/montserrat"
+            app:backgroundTint="@null"
+            style="@style/AppTheme.RoundedCornerMaterialButtonYes"
+            app:layout_constraintTop_toBottomOf="@+id/up_downbtn2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/normal_appearbtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="NORMAL APPEAR ANIMATION Dilog"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/montserrat"
+            app:backgroundTint="@null"
+            style="@style/AppTheme.RoundedCornerMaterialButtonYes"
+            app:layout_constraintTop_toBottomOf="@+id/fadein_fadeoutbtn3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/comeleft_gorightbtn5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="COMELEFT/GORIGHT ANIMATION Dilog"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/montserrat"
+            app:backgroundTint="@null"
+            style="@style/AppTheme.RoundedCornerMaterialButtonYes"
+            app:layout_constraintTop_toBottomOf="@+id/normal_appearbtn4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/alert_Seconlineid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="#2196F3"
+            app:layout_constraintTop_toBottomOf="@id/customdialoganimation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/alert_Seconlineid"
+           >
+            <TextView
+                android:id="@+id/viewtitle2id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:padding="@dimen/_10sdp"
+                android:text="Alert Dialog"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="#00BCD4"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/textview_border"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+               />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/alertdilog1"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="MaterialAlert DialogBuilder"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/montserrat"
+                app:backgroundTint="@null"
+                style="@style/AppTheme.RoundedCornerMaterialButtonYes"
+                app:layout_constraintTop_toBottomOf="@+id/viewtitle2id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/alertdilog2"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="AlertDialog.Builder"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/montserrat"
+                app:backgroundTint="@null"
+                style="@style/AppTheme.RoundedCornerMaterialButtonYes"
+                app:layout_constraintTop_toBottomOf="@+id/alertdilog1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/alertdilog3"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="AlertDialog.Builder"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/montserrat"
+                app:backgroundTint="@null"
+                style="@style/AppTheme.RoundedCornerMaterialButtonYes"
+                app:layout_constraintTop_toBottomOf="@+id/alertdilog2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</ScrollView>

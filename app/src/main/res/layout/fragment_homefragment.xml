@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#BBB8B8"
+    android:id="@+id/drawer_layout"
+
+    tools:context=".homefragment.homefragment">
+<!--    tools:openDrawer="start"-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/jetpackcomp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_13sdp"
+            app:strokeColor="#3A3838"
+            app:strokeWidth="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardBackgroundColor="#DDEBD8D8"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jetpacktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:text="Jetpack Compose"                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="#141414"
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/jetpacktext"
+                    android:text="Manual Way / FrameWork"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mythiredpartylibararybtnid"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_13sdp"
+            app:strokeColor="#3A3838"
+            app:layout_constraintTop_toBottomOf="@+id/jetpackcomp"
+            app:strokeWidth="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardBackgroundColor="#DDEBD8D8"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textthiredlibarar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:text="Third Party Libraries"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="#141414"
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/textthiredlibarar"
+                    android:text="Manual Way / FrameWork"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/dibtnid"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_13sdp"
+            app:strokeColor="#3A3838"
+            app:strokeWidth="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/mythiredpartylibararybtnid"
+            app:cardBackgroundColor="#DDEBD8D8"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:text="Dagger Hilt"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/_29ssp"
+                    android:textColor="#141414"
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/text1"
+                    android:text="Manual Way / FrameWork"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/listbtnid"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_13sdp"
+            app:strokeColor="#3A3838"
+            app:strokeWidth="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/dibtnid"
+            app:cardBackgroundColor="#DDEBD8D8"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:text="List Type"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/_29ssp"
+                    android:textColor="#141414"
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/text2"
+                    android:text="Manual Way / FrameWork"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/tablayoutbtnid"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_13sdp"
+            app:strokeColor="#3A3838"
+            app:strokeWidth="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/listbtnid"
+            app:cardBackgroundColor="#DDEBD8D8"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:text="Tab Layout"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/_29ssp"
+                    android:textColor="#141414"
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/text3"
+                    android:text="Manual Way / FrameWork"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        <!--                <FrameLayout-->
+<!--                    android:id="@+id/fragmentlayout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/appbarid"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/nav_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:menu="@menu/activity_main_drawer"-->
+<!--        android:fitsSystemWindows="true"-->
+<!--        android:layout_gravity="start"-->
+<!--        />-->
+<!--    app:headerLayout="@layout/nav_header_main"-->
+
+
+
+</ScrollView>

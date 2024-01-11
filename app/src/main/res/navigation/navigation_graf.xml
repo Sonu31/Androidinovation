@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graf"
+    app:startDestination="@id/homefragment">
+
+    <fragment
+        android:id="@+id/homefragment"
+        android:name="com.example.androidinovation.homefragment.homefragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" >
+
+        <action
+            android:id="@+id/action_homefragment_to_drFragement1"
+            app:destination="@id/drFragement1" />
+        <action
+            android:id="@+id/action_homefragment_to_drFragment2"
+            app:destination="@id/drFragment2" />
+        <action
+            android:id="@+id/action_homefragment_to_drFragment3"
+            app:destination="@id/drFragment3" />
+        <action
+            android:id="@+id/action_homefragment_to_daggerH1Fragment"
+            app:destination="@id/daggerH1Fragment" />
+        <action
+            android:id="@+id/action_homefragment_to_listTypeHomeFragment"
+            app:destination="@id/listTypeHomeFragment" />
+        <action
+            android:id="@+id/action_homefragment_to_tabHomeFragment"
+            app:destination="@id/tabHomeFragment" />
+        <action
+            android:id="@+id/action_homefragment_to_librarieshomeFragment"
+            app:destination="@id/librarieshomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drFragement1"
+        android:name="com.example.androidinovation.drawerfragment.DrFragement1"
+        android:label="fragment_dr_fragement1"
+        tools:layout="@layout/fragment_dr_fragement1" >
+        <action
+            android:id="@+id/action_drFragement1_to_homefragment2"
+            app:destination="@id/homefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drFragment3"
+        android:name="com.example.androidinovation.drawerfragment.DrFragment3"
+        android:label="fragment_dr3"
+        tools:layout="@layout/fragment_dr3" >
+        <action
+            android:id="@+id/action_drFragment3_to_homefragment"
+            app:destination="@id/homefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drFragment2"
+        android:name="com.example.androidinovation.drawerfragment.DrFragment2"
+        android:label="fragment_dr2"
+        tools:layout="@layout/fragment_dr2" >
+        <action
+            android:id="@+id/action_drFragment2_to_homefragment"
+            app:destination="@id/homefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/daggerH1Fragment"
+        android:name="com.example.androidinovation.daggerHilt_manually.DaggerH1Fragment"
+        android:label="fragment_dagger_h1"
+        tools:layout="@layout/fragment_dagger_h1" >
+        <action
+            android:id="@+id/action_daggerH1Fragment_to_homefragment"
+            app:destination="@id/homefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listTypeHomeFragment"
+        android:name="com.example.androidinovation.ListType.homescreen.ListTypeHomeFragment"
+        android:label="fragment_list_type_home"
+        tools:layout="@layout/fragment_list_type_home" >
+        <action
+            android:id="@+id/action_listTypeHomeFragment_to_homefragment"
+            app:destination="@id/homefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabHomeFragment"
+        android:name="com.example.androidinovation.Tablayout.tabhomescreen.TabHomeFragment"
+        android:label="TabHomeFragment" >
+        <action
+            android:id="@+id/action_tabHomeFragment_to_homefragment"
+            app:destination="@id/homefragment" />
+        <action
+            android:id="@+id/action_tabHomeFragment_to_firstTabFragment"
+            app:destination="@id/firstTabFragment" />
+        <action
+            android:id="@+id/action_tabHomeFragment_to_secondTabHFragment"
+            app:destination="@id/secondTabHFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstTabFragment"
+        android:name="com.example.androidinovation.Tablayout.fragment.firsttablayout.FirstTabFragment"
+        android:label="fragment_first_tab"
+        tools:layout="@layout/fragment_first_tab" >
+        <action
+            android:id="@+id/action_firstTabFragment_to_tabHomeFragment"
+            app:destination="@id/tabHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondTabHFragment"
+        android:name="com.example.androidinovation.Tablayout.fragment.secondtablayout.SecondTabHFragment"
+        android:label="fragment_second_tab_h"
+        tools:layout="@layout/fragment_second_tab_h" >
+        <action
+            android:id="@+id/action_secondTabHFragment_to_tabHomeFragment"
+            app:destination="@id/tabHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/librarieshomeFragment"
+        android:name="com.example.androidinovation.libraries.homescreen.LibrarieshomeFragment"
+        android:label="fragment_home_libraries"
+        tools:layout="@layout/fragment_home_libraries" >
+        <action
+            android:id="@+id/action_librarieshomeFragment_to_homefragment"
+            app:destination="@id/homefragment" />
+        <action
+            android:id="@+id/action_librarieshomeFragment_to_waterfalltoolbarFragment"
+            app:destination="@id/waterfalltoolbarFragment" />
+        <action
+            android:id="@+id/action_librarieshomeFragment_to_swipeBackLayoutFragment"
+            app:destination="@id/swipeBackLayoutFragment" />
+        <action
+            android:id="@+id/action_librarieshomeFragment_to_vegaLayoutManagerFragment"
+            app:destination="@id/vegaLayoutManagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/waterfalltoolbarFragment"
+        android:name="com.example.androidinovation.libraries.homescreen.waterfalltoolbar.WaterfalltoolbarFragment"
+        android:label="fragment_waterfalltoolbar_list"
+        tools:layout="@layout/fragment_waterfalltoolbar_list" >
+        <action
+            android:id="@+id/action_waterfalltoolbarFragment_to_librarieshomeFragment"
+            app:destination="@id/librarieshomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/swipeBackLayoutFragment"
+        android:name="com.example.androidinovation.libraries.homescreen.swipebackLayout.SwipeBackLayoutFragment"
+        android:label="fragment_swipe_back_layout"
+        tools:layout="@layout/fragment_swipe_back_layout" >
+        <action
+            android:id="@+id/action_swipeBackLayoutFragment_to_librarieshomeFragment"
+            app:destination="@id/librarieshomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vegaLayoutManagerFragment"
+        android:name="com.example.androidinovation.libraries.homescreen.vegaLayoutManager.VegaLayoutManagerFragment"
+        android:label="fragment_vega_layout_manager"
+        tools:layout="@layout/fragment_vega_layout_manager" >
+        <action
+            android:id="@+id/action_vegaLayoutManagerFragment_to_librarieshomeFragment"
+            app:destination="@id/librarieshomeFragment" />
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/close_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="closeDrawer"
+        android:src="@drawable/baseline_view_headline_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/close_drawer">
+
+        <TextView
+            android:id="@+id/itme1id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onclickItem1"
+            android:text="ITEM1 Dialog"
+            android:textSize="@dimen/drawerlist_textsize"
+            android:fontFamily="@font/montserrat"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item2id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onclickItem2"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:padding="@dimen/_10sdp"
+            android:text="ITEM2 Text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/drawerlist_textsize"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itme1id" />
+
+        <TextView
+            android:id="@+id/item3id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onclickItem3"
+            android:fontFamily="@font/montserrat"
+           android:padding="10sp"
+            android:text="ITEM3 Button"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="@dimen/drawerlist_textsize"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item2id" />
+
+        <TextView
+            android:id="@+id/item4id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onclickItem4"
+           android:padding="@dimen/_10sdp"
+            android:text="ITEM4"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="@dimen/drawerlist_textsize"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item3id" />
+        <TextView
+            android:id="@+id/item5id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onclickItem5"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat"
+            android:text="ITEM5"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="@dimen/drawerlist_textsize"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item4id" />
+
+        <TextView
+            android:id="@+id/item6id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onclickItem6"
+           android:padding="@dimen/_10sdp"
+            android:text="ITEM6"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="@dimen/drawerlist_textsize"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item5id" />
+        <TextView
+            android:id="@+id/item7id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onclickItem7"
+            android:padding="@dimen/_10sdp"
+            android:text="ITEM7"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="@dimen/drawerlist_textsize"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item6id" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

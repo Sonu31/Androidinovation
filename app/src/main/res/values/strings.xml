@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Android inovation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_home">homeitem</string>
+    <string name="menu_gallery">galleryitem</string>
+    <string name="menu_slideshow">slideshow_itme</string>
+
+
+    //---------------
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Open navigation</string>
+
+    //Drawer String
+    <string name="all_dilog_example">Coustm Dilog Example</string>
+    <string name="dilogmessage">This id testing message</string>
+    <string name="content_description_end_icon">sonu</string>
+    <string name="label_logout">Fragment LISTVIEW DILOG</string>
+    <string name="msg_logout">this is Dilog Fragment</string>
+    <string name="title_activity_jetpack_main">JetpackMainActivity</string>
+
+
+    <string name="title_activity_ttext">tText</string>
+    <string name="title_activity_text">TextActivity</string>
+    <string name="title_activity_button">ButtonActivity</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+    <string name="title_activity_bnavigation">BNavigationActivity</string>
+    <string name="title_activity_animatio">AnimatioActivity</string>
+    <string name="title_activity_scroll">ScrollActivity</string>
+    <string name="title_activity_toolbar">ToolbarActivity</string>
+
+</resources>

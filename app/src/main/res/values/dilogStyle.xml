@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialog" parent="Base.Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textSize">@dimen/_22ssp</item>
+
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/_20ssp</item>
+    </style>
+
+    <style name="Theme.NevigationEx.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.NevigationEx.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+
+
+    <style name="AppTheme.RoundedCornerMaterialButtonYes" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape1</item>
+        <item name="strokeWidth">@dimen/_2sdp</item>
+        <item name="strokeColor">#2196F3</item>
+    </style>
+
+    <style name="coustomdialog" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+    </style>
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="Theme.AndoridJerpack" parent="android:Theme.Material.Light.NoActionBar" />
+
+
+</resources>

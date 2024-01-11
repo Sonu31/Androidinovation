@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DD4B915F"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".drawerfragment.DrFragment2">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:id="@+id/textviewlayoutid"
+
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent">
+
+          <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/CATAGORYtitle"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="EDITTEXT"
+              android:padding="@dimen/_4sdp"
+              android:textColor="#E91E63"
+              android:textSize="@dimen/_20ssp"
+              android:layout_marginHorizontal="@dimen/_10sdp"
+              android:textStyle="bold"
+              android:background="@drawable/textview_border"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="@dimen/_10sdp"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              />
+
+          <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/title1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="TEXTVIEW"
+              android:textColor="@color/white"
+              android:textSize="@dimen/_20ssp"
+              android:layout_marginHorizontal="@dimen/_10sdp"
+              android:textStyle="bold"
+              android:background="@drawable/textview_border"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="@dimen/_10sdp"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/CATAGORYtitle"
+              app:layout_constraintLeft_toLeftOf="parent"
+              />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+      <View
+          android:id="@+id/textviewline1"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_3sdp"
+          android:background="#E91E63"
+          android:layout_marginHorizontal="@dimen/_10sdp"
+          android:layout_marginVertical="@dimen/_10sdp"
+          app:layout_constraintTop_toBottomOf="@id/textviewlayoutid"
+          />
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/edittextfiledid"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textviewline1">
+
+          <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/CATAGORYtitle2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="EDITTEXT"
+              android:padding="@dimen/_4sdp"
+              android:textColor="#E91E63"
+              android:textSize="@dimen/_20ssp"
+              android:layout_marginHorizontal="@dimen/_10sdp"
+              android:textStyle="bold"
+              android:background="@drawable/textview_border"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="@dimen/_10sdp"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              />
+          <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/title2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="FILLED TEXT FIELD"
+              android:textColor="@color/white"
+              android:textSize="@dimen/_20ssp"
+              android:layout_marginHorizontal="@dimen/_10sdp"
+              android:textStyle="bold"
+              android:background="@drawable/textview_border"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="@dimen/_10sdp"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/CATAGORYtitle2"
+              app:layout_constraintLeft_toLeftOf="parent"
+              />
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textField1"
+              android:layout_width="match_parent"
+              android:layout_marginHorizontal="@dimen/_15sdp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/_15sdp"
+              app:layout_constraintTop_toBottomOf="@+id/title2"
+              app:hintTextColor="@color/black"
+              android:hint="Enter Your Name">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="#03A9F4"
+                  android:textColor="@color/black"
+                  />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textField2"
+              android:layout_width="match_parent"
+              android:layout_marginHorizontal="@dimen/_15sdp"
+              android:layout_height="wrap_content"
+              app:endIconMode="password_toggle"
+              android:layout_marginTop="@dimen/_15sdp"
+              app:layout_constraintTop_toBottomOf="@+id/textField1"
+              app:hintTextColor="@color/black"
+              android:hint="Enter Your Name"
+          app:startIconDrawable="@drawable/baseline_computer_24"
+          app:startIconContentDescription="@string/content_description_end_icon">
+<!--              app:endIconMode="clear_text"-->
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="#03A9F4"
+                  android:inputType="textPassword"
+                  android:textColor="@color/black"
+                  />
+
+<!--              android:inputType="textPassword"-->
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textField3"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              app:endIconMode="custom"
+              app:endIconDrawable="@drawable/baseline_verified_24"
+              app:endIconContentDescription="@string/content_description_end_icon"
+
+              android:layout_marginHorizontal="@dimen/_15sdp"
+              android:layout_marginTop="@dimen/_15sdp"
+              app:layout_constraintTop_toBottomOf="@+id/textField2"
+              app:hintTextColor="@color/black"
+              android:hint="Enter Your Name"
+              app:startIconDrawable="@drawable/baseline_computer_24"
+              app:startIconContentDescription="@string/content_description_end_icon">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="#03A9F4"
+                  android:inputType="textPassword"
+                  android:textColor="@color/black"
+                  />
+
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <View
+          android:id="@+id/textviewline3"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_3sdp"
+          android:background="#E91E63"
+          android:layout_marginHorizontal="@dimen/_10sdp"
+          android:layout_marginVertical="@dimen/_10sdp"
+          app:layout_constraintTop_toBottomOf="@id/edittextfiledid"
+          />
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/outlined_textfield"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/textviewline3"
+          >
+          <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/title3"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Implementing an exposed dropdown menu"
+              android:textColor="@color/white"
+              android:textSize="@dimen/_20ssp"
+              android:layout_marginHorizontal="@dimen/_10sdp"
+              android:textStyle="bold"
+              android:background="@drawable/textview_border"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="@dimen/_10sdp"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              />
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/editText"
+              android:layout_width="match_parent"
+              android:layout_marginHorizontal="@dimen/_15sdp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/_15sdp"
+              app:layout_constraintTop_toBottomOf="@+id/title3"
+               style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+
+          <AutoCompleteTextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#1A87E0"
+              android:inputType="none"
+              />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <View
+          android:id="@+id/textviewline4"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_3sdp"
+          android:background="#E91E63"
+          android:layout_marginHorizontal="@dimen/_10sdp"
+          android:layout_marginVertical="@dimen/_10sdp"
+          app:layout_constraintTop_toBottomOf="@id/outlined_textfield"
+          />
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          app:layout_constraintTop_toBottomOf="@+id/textviewline4"
+          android:layout_height="wrap_content">
+
+          <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/title4"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="OUTLINED TEXTGIELD"
+              android:textColor="@color/white"
+              android:textSize="@dimen/_20ssp"
+              android:layout_marginHorizontal="@dimen/_10sdp"
+              android:textStyle="bold"
+              android:background="@drawable/textview_border"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="@dimen/_10sdp"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              />
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/outlinedTextField"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/_15sdp"
+              android:layout_marginHorizontal="@dimen/_15sdp"
+              android:hint="Enter your name"
+              app:layout_constraintTop_toBottomOf="@+id/title4"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  />
+
+          </com.google.android.material.textfield.TextInputLayout>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
