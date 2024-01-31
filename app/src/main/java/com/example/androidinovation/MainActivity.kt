@@ -1,6 +1,7 @@
 package com.example.androidinovation
 
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.LinearGradient
 import android.graphics.Shader
@@ -21,6 +22,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.androidinovation.databinding.ActivityMainBinding
 import com.example.androidinovation.databinding.FragmentExitBinding
+import com.example.androidinovation.drawerfragment.DrFragment4
 import com.example.androidinovation.util.ApnaUtil
 import com.google.android.material.navigation.NavigationView
 import com.modlueinfotech.allwishesgif.utils.Util
@@ -175,6 +177,7 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
 
     fun onclickItem4(v: View){
         ApnaUtil.textColorGradent(binding.drawerItem.item4id,"#27A4FF","#0055D6")
+    startActivity(Intent(this@MainActivity,DrFragment4::class.java))
     }
 
     fun onclickItem5(v: View){

@@ -30,6 +30,7 @@ import com.example.androidinovation.jetpack.allActivity.TextActivity
 import com.example.androidinovation.jetpack.allActivity.ToolbarActivity
 import com.example.androidinovation.R
 import com.example.androidinovation.jetpack.allActivity.AnimatioActivity
+import com.example.androidinovation.jetpack.allActivity.ApnaCompleteUIActivity
 import com.example.androidinovation.jetpack.ui.theme.AndoridJerpackTheme
 
 class JetpackHomeActivity : ComponentActivity() {
@@ -61,6 +62,10 @@ class JetpackHomeActivity : ComponentActivity() {
                     ViewButton("ScrollView  ",scrollScreen)
                     val toolbar = Intent(this@JetpackHomeActivity, ToolbarActivity::class.java)
                     ViewButton("Toolbar , Appbar,Progressbar  ",scrollScreen)
+                    val uiscreen = Intent(this@JetpackHomeActivity, ApnaCompleteUIActivity::class.java)
+                    ViewButton("UI Screen",uiscreen)
+
+
                 }
             }
         }

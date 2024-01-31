@@ -3,11 +3,14 @@ package com.example.androidinovation.jetpack.allActivity
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -23,11 +26,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.androidinovation.jetpack.ui.theme.AndoridJerpackTheme
+import org.w3c.dom.Text
 
 class TextActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,12 +48,15 @@ class TextActivity : ComponentActivity() {
                 ) {
 //                    Greeting("Android")
                     activityTitle("SMALL VIEW EX")
+
                     EditTextOrTextFileld()
                 }
             }
         }
     }
 }
+
+
 
 
 
@@ -62,6 +72,16 @@ fun activityTitle(name: String)
         )
         }
 }
+
+@Preview
+@Composable
+fun DefaultPreview(){
+    AndoridJerpackTheme(){
+//        EditTextOrTextFileld()
+        Textviewfun()
+    }
+}
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -99,4 +119,15 @@ fun EditTextOrTextFileld(){
     }
 
 
+}
+
+
+
+@Composable
+fun Textviewfun(){
+    AndoridJerpackTheme(){
+//        Text("Hello World!", color = Color(0,100,100), fontSize = 60.sp, fontStyle = FontStyle.Italic, modifier = Modifier.background( Color.White).padding(all = 30.dp)
+        Text("Hello World!", color = Color(0,100,100), fontSize = 60.sp, fontStyle = FontStyle.Italic, modifier = Modifier.width(300.dp)
+        )
+    }
 }

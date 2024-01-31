@@ -6,12 +6,18 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/appicon"
+        android:icon="@drawable/appicion"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidInovation"
         tools:targetApi="31">
-
+        <activity
+            android:name=".drawerfragment.DrFragment4"
+            android:exported="false"
+            android:label="@string/title_activity_dr_fragment4" />
+        <activity
+            android:name=".jetpack.allActivity.ApnaCompleteUIActivity"
+            android:exported="false" />
         <activity
             android:name=".jetpack.allActivity.ToolbarActivity"
             android:exported="false"
@@ -52,9 +58,6 @@
             android:exported="false"
             android:label="@string/title_activity_text"
             android:theme="@style/Theme.AndoridJerpack" />
-
-
-
         <activity
             android:name=".jetpack.JetpackHomeActivity"
             android:exported="false"

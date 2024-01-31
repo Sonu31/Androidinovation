@@ -69,6 +69,15 @@ fun AndoridJerpackTheme(
 }
 
 @Composable
+fun Geekscourse(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
+    MaterialTheme(
+        typography = Typography,
+        content = content
+    )
+}
+//shapes = Shapes,
+
+@Composable
 fun AndroidInovationTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
